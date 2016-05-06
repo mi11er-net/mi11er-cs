@@ -13,4 +13,18 @@
   <rule ref="PEAR.Classes.ClassDeclaration.OpenBraceNewLine" />
   <rule ref="Squiz.ControlStructures" />
   <rule ref="Generic.CodeAnalysis" />
+
+  <!-- Fix spacing -->
+  <rule ref="Squiz.ControlStructures.ForLoopDeclaration">
+    <properties>
+      <property name="requiredSpacesAfterOpen" value="1"/>
+      <property name="requiredSpacesBeforeClose" value="1"/>
+    </properties>
+  </rule>
+  <rule ref="Squiz.ControlStructures.ForEachLoopDeclaration">
+    <properties>
+      <property name="requiredSpacesAfterOpen" value="1"/>
+      <property name="requiredSpacesBeforeClose" value="1"/>
+    </properties>
+  </rule>
 </ruleset>
