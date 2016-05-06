@@ -1,0 +1,28 @@
+{
+	"name": "mi11er/mi11er-cs",
+	"description": "Coding standards for mi11er projects",
+	"keywords": [
+		"phpcs",
+		"standards",
+		"wordpress"
+	],
+	"authors": [
+		{
+			"name": "Matthew Miller"
+		}
+	],
+	"license": "MIT",
+	"require": {
+		"squizlabs/php_codesniffer": "*",
+		"wp-coding-standards/wpcs": "*",
+		"phpmd/phpmd": "*"
+	},
+	"scripts": {
+		"config-set" : [
+			"\"vendor/bin/phpcs\" --config-set installed_paths ../../..,../../../vendor/wp-coding-standards/wpcs",
+			"\"vendor/bin/phpcs\" --config-set default_standard mi11er-wp"
+		],
+		"post-install-cmd": "composer config-set",
+		"post-update-cmd": "composer config-set"
+	}
+}
