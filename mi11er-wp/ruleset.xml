@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<ruleset name="mi11er-wordpress">
+  <description>The coding standard for my wordpress plugins and themes. Based on the WordPress-Coding-Standards</description>
+
+  <!-- The Wordpress Standards-->
+  <rule ref="WordPress">
+    <!-- code must be php 5 comaptiable -->
+    <exclude name="Squiz.Commenting.FunctionComment.ScalarTypeHintMissing" />
+  </rule> 
+
+  <!-- Addtional Standards -->
+  <rule ref="Generic.NamingConventions.UpperCaseConstantName" />
+  <rule ref="PEAR.Classes.ClassDeclaration.OpenBraceNewLine" />
+  <rule ref="Squiz.ControlStructures" />
+  <rule ref="Generic.CodeAnalysis" />
+</ruleset>
