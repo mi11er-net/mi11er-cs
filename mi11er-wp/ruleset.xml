@@ -12,7 +12,10 @@
   <rule ref="Generic.NamingConventions.UpperCaseConstantName" />
   <rule ref="PEAR.Classes.ClassDeclaration.OpenBraceNewLine" />
   <rule ref="Squiz.ControlStructures" />
-  <rule ref="Generic.CodeAnalysis" />
+  <rule ref="Generic.CodeAnalysis">
+    <!-- Hook callbacks may not use all params -->
+    <exclude name="Generic.CodeAnalysis.UnusedFunctionParameter" />
+  </rule>
 
   <!-- Fix spacing -->
   <rule ref="Squiz.ControlStructures.ForLoopDeclaration">
