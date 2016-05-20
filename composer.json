@@ -17,6 +17,9 @@
 		"wp-coding-standards/wpcs": "*",
 		"phpmd/phpmd": "*"
 	},
+	"conflict": {
+		"wp-coding-standards/wpcs": "2014-12-11"
+	},
 	"scripts": {
 		"config-set" : [
 			"\"vendor/bin/phpcs\" --config-set installed_paths ../../..,../../../vendor/wp-coding-standards/wpcs",
